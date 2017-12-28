@@ -2,16 +2,16 @@ package org.demo
 
 class buildUtils2 implements Serializable{
     def steps
+    def age = 23
 
-    buildUtils2(){
+    buildUtils2(steps){
+        this.steps = steps
     }
 
     def timedGradleBuild(tasks){
-
-//        timestamps{
-        script{
-            sh "echo 'steps passed as an object'"
+        steps.timestamps{
+            steps.sh "echo 'steps passed as an object'"
+            steps.echo age
         }
-//        }
     }
 }
