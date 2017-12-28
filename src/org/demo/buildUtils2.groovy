@@ -5,6 +5,7 @@ class buildUtils2 implements Serializable{
     def steps
     def age = "23"
 
+    //constructor
     buildUtils2(steps){
         this.steps = steps
     }
@@ -14,8 +15,8 @@ class buildUtils2 implements Serializable{
         this.env = env
     }
 
+    //use steps object to execute pipeline commands
     def timedGradleBuild(tasks){
-        steps.tool 'gradle3.2'
         steps.sh "echo 'Environment NAME = ${env.NAME}'"
         steps.timestamps{
             steps.sh "echo 'steps passed as an object'"
