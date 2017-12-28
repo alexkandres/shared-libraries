@@ -1,7 +1,7 @@
 package org.demo
 
 def timedGradleBuild(tasks){
-    timestamp{
+    timestamps{
         sh "timeGradleBuild method"
     }
 }
