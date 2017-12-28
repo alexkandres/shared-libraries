@@ -1,5 +1,7 @@
-package org.demo
+//package org.demo
 
 def timedGradleBuild(tasks){
-    sh "echo 'timeGradleBuild method'"
+    timestamps{
+        sh "echo 'timeGradleBuild method'"
+    }
 }
