@@ -9,7 +9,9 @@ class buildUtils2 implements Serializable{
     def timedGradleBuild(tasks){
 
 //        timestamps{
+        script{
             sh "echo 'steps passed as an object'"
+        }
 //        }
     }
 }
