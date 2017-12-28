@@ -11,7 +11,7 @@ class buildUtils2 implements Serializable{
     def timedGradleBuild(tasks){
         steps.timestamps{
             steps.sh "echo 'steps passed as an object'"
-            steps.echo age
+            steps.echo ${age}
         }
     }
 }
