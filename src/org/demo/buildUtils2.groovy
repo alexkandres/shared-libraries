@@ -8,8 +8,8 @@ class buildUtils2 implements Serializable{
 
     def timedGradleBuild(tasks){
 
-        timestamps{
+//        timestamps{
             sh "echo 'steps passed as an object'"
-        }
+//        }
     }
 }
