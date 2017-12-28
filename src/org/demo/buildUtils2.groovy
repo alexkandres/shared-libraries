@@ -15,6 +15,7 @@ class buildUtils2 implements Serializable{
     }
 
     def timedGradleBuild(tasks){
+        steps.tools 'gradle3.2'
         steps.sh "echo 'Environment NAME = ${env.NAME}'"
         steps.timestamps{
             steps.sh "echo 'steps passed as an object'"
