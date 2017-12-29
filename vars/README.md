@@ -8,6 +8,9 @@ want to access in the pipeline
 Pipeline = http://jenkinsdv.gartner.com/job
 
 ## timedCommand
+
+- JobURL http://localhost:8080/job/sharedLibraryVars1/configure
+
 - Can define set
 of methods in a
 file
@@ -20,7 +23,12 @@ are objects
 created on
 demand
 ```
-Give the example
+script{
+    timedCommand.cmd = 'ls -la'
+    echo timedCommand.cmd
+    timedCommand.runCommand()
+    echo timedCommand.getOutput()
+}
 ```
 ## timedCommand2
 ```
@@ -35,5 +43,5 @@ Give the example
 Give the example
 ```
 
-##Authors
+## Authors
 * **Alex Andres**  - [Alex.Andres@gartner.com](alex.andres@gartner.com)
