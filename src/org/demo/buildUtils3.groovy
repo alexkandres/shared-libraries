@@ -6,7 +6,7 @@ class buildUtils3 implements Serializable{
     def timedGradleBuild(script, tasks){
         script.sh "echo 'Environment NAME = ${env.NAME}'"
         script.timestamps{
-            script.sh "echo 'steps passed as an object'"
+            script.sh "echo 'execute gradle ${tasks}'"
             script.echo age
         }
     }
